@@ -1,4 +1,2 @@
-Code that goes along with a video I made here: https://www.youtube.com/watch?v=vVx1737auSE
-
-This is for a user login system using Flask and MongoDB.
 # Churn-Analysis-Flask-Dashboard
+A cloud-based dashboard with embedded PowerBI report is developed using Flask and Mongodb for the ECenter marketing team to view and apply marketing strategies accordingly.
