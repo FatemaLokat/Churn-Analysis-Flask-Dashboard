@@ -1,13 +1,14 @@
 name: Ecenter Dashboard
+language: generic
+
+on:
+  push:
+    branches: [ master ]
 
 deploy:
   provider: heroku
   api_key:
     secure: fac5b1b8-b212-4756-9e33-770fe75549be
-
-on:
-  push:
-    branches: [ master ]
 
 jobs:
   build:
