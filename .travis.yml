@@ -1,4 +1,4 @@
-name: ecenter-dashboard
+name: Churn-Analysis-Flask-Dashboard
 language: generic
 
 on:
