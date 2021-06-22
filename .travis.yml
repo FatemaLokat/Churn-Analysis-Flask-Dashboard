@@ -6,8 +6,12 @@ on:
     branches: [ master ]
 
 deploy:
+  skip_cleanup: true
+    
+deploy:
   provider: heroku
   api_key: fac5b1b8-b212-4756-9e33-770fe75549be
+  skip_cleanup: true
 
 jobs:
   build:
