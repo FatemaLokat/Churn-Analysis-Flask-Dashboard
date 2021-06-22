@@ -7,8 +7,7 @@ on:
 
 deploy:
   provider: heroku
-  api_key:
-    secure: fac5b1b8-b212-4756-9e33-770fe75549be
+  api_key: fac5b1b8-b212-4756-9e33-770fe75549be
 
 jobs:
   build:
