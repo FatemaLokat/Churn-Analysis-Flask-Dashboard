@@ -109,7 +109,7 @@ label {
 
 .signin:hover {
   background: #4082f5;
-  box-shadow: 0px 4px 35px -5px #4082f5;
+  box-shadow: 0px 4px 35px -5px #f2c811;
   cursor: pointer;
 }
 
@@ -126,7 +126,6 @@ hr {
 u {
     text-decoration: underline;
   	text-decoration-color: #fc2166;
-
 }
 .center {
   display: block;
@@ -148,10 +147,14 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  width:100px;
+  height: 50px;
+
 }
 
 li {
   float: right;
+  width:100%
 }
 
 li a {
@@ -171,10 +174,14 @@ li a:hover {
   font-family: 'Montserrat', sans-serif;
   color: #fff;
   opacity: 0.75;
+  position:relative;
+  top: -50px;
 }
 .topnav {
   overflow: hidden;
   background: linear-gradient(to right, #323435,#323435,#f75488);
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .topnav a {
@@ -182,13 +189,14 @@ li a:hover {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 16px 18px;
+  padding: 16px 20px;
   text-decoration: none;
   font-size: 17px;
 }
 
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #f2c811;
+  border: black;
   color: black;
 }
 
@@ -200,4 +208,15 @@ li a:hover {
   top:-62px;
   right: -15px ;
 
+}
+iframe {
+  position:relative;
+  top: -50px;
+}
+.tips {
+  text-align: center;
+  position: relative;
+  top: -25px;
+  right: -5%;
+  font-weight: bolder;
 }
