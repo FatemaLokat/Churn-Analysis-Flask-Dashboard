@@ -1,15 +1,13 @@
-# This workflow will install Python dependencies, run tests and lint with a single version of Python
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
-
 name: Ecenter Dashboard
-on:
-  push:
-    branches: [ master ]
 
 deploy:
   provider: heroku
   api_key:
     secure: fac5b1b8-b212-4756-9e33-770fe75549be
+
+on:
+  push:
+    branches: [ master ]
 
 jobs:
   build:
@@ -33,7 +31,9 @@ jobs:
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-    - name: Test with pytest
+    - name: Test 
       run: |
-        pytest
+        pip install pytest
+        pip install pytest-cov
+        pytest apptest.py
       
